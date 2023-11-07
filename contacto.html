@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/comun/nav.css">
+    <link rel="stylesheet" href="styles/comun/footer.css">
+    <link rel="stylesheet" href="styles/contacto/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>DayDream Plaza registro</title>
+</head>
+<body>
+    <nav class="navegacion">
+        <a href="index.html" class="logo">
+            <img src="img/logos/LogoDayDream.png" alt="logo de la compañia">
+            <h1 class="nomb-empresa">DayDream Plaza</h1>
+        </a>
+        <ul class="menu-horizontal">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li>
+                <a href="servicios.html">Directorio</a>
+                <ul class="menu-vertical">
+                    <li><a href="cafeterías.html">Cafeterias</a></li>
+                    <li><a href="restaurantes.html">Restaurantes</a></li>
+                    <li><a href="ropa.html">Ropa</a></li>
+                    <li><a href="calzado.html">Calzado</a></li>
+                    <li><a href="entretenimiento.html">Entretenimiento</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html" target="_blank">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="encabezado-principal">Formulario de registro</h1>
+        <form>
+            <div class="field">
+                <label>Nombre</label>
+                <input type="text" name="nombre" required placeholder="Nombre(s)">
+            </div>
+            <div class="field">
+                <label>Apellidos</label>
+                <input type="text" name="apellido" required placeholder="Apellidos">
+            </div>
+            <div class="field">
+                <label>Fecha actual</label>
+                <input type="date" name="fecha" required>
+            </div>
+            <div class="field">
+                <label>Telefono</label>
+                <input type="number" name="telefono" required placeholder="Telefono">
+            </div>
+            <div class="field">
+                <label>Correo</label>
+                <input type="email" name="correo" required placeholder="Correo Electrónico">
+            </div>
+            <div class="field">
+                <label>Departamento</label>
+                <select name="departamento" required>
+                    <option selected disabled>Selecciona un valor</option>
+                    <option>Cafetería</option>
+                    <option>Restaurante</option>
+                    <option>Ropa</option>
+                    <option>Calzado</option>
+                    <option>Entretenimiento</option>
+                </select>
+            </div>
+            <div class="textbox">
+                <label>Mensaje</label>
+                <textarea ></textarea>
+            </div>
+            <div class="servicio">
+                <label>Seleccione el tipo de servicio</label>
+                <div><input type="radio" name="id-servicio" required>Publicidad</div>
+                <div><input type="radio" name="id-servicio" required>Local comercial</div>
+                <div><input type="radio" name="id-servicio" required>Ambos</div>
+            </div>
+            <div class="privacidad">
+                <input type="checkbox" required>
+                <label>He leído y acepto la <a href="" id="politica">politica de privacidad</a> y los <a href="">términos y condiciones</a></label>
+            </div>
+            <div class="sumbit">
+                <button>ENVÍAR</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="container">
+           <div class="fila">
+            <div class="footer-column">
+                <h4>Nuestra compañia</h4>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="contacto.html" target="_blank">Afiliate con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Sección de quejas</a></li>
+                    <li><a href="#">Sección de sugerencias</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lunes a viernes</li>
+                    <li>9:00 a.m a 10:00 p.m</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Siguenos</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>
